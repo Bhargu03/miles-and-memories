@@ -1,0 +1,280 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background: #000000;
+  color: #fff;
+  padding: 5px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo img {
+  height: 100px;          /* increased size */
+  width: auto;           /* keep proportions */
+}
+
+.logo h1 {
+  font-size: 1.2rem;
+  color: #ff6600;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Navigation Book Button */
+.nav-book {
+  background: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-book:hover {
+  background: #cc5200;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 1450%;          /* full width */
+  height: 600px;        /* compact height */
+  overflow: hidden;
+  margin: 0;
+  align-self: center;
+  max-width: 1450px;       /* limit max width */
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Overlay text */
+.hero-text {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tours */
+.tour-card {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 4px solid #ff6600;
+}
+#booking {
+  background: #f9f9f9;
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#booking h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#booking label {
+  font-weight: bold;
+}
+
+#booking input, #booking select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#booking button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+#booking button:hover {
+  background: #cc5200;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #cc5200;
+}
+
+.btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #cc5200;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tour-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}

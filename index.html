@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Miles & Memories</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+ <header>
+  <nav>
+    <div class="logo">
+      <img src="logo.jpeg" alt="Miles & Memories Logo">
+      
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-book">Book Now</button>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<secti id="home" class="hero">
+  
+    <img src="hero1.jpeg" alt="Himalayan Ride" class="active">
+    
+  <div class="hero-text">
+    <h2>Ride the Roads, Collect the Stories</h2>
+    <a href="#booking" class="btn">Book Your Ride</a>
+  </div>
+</section>
+
+<!-- Tours -->
+<section id="tours">
+  <h2>Our Tours</h2>
+  <div class="tour-card">
+    <img src="hero1.jpeg" alt="Leh Ladakh Adventure">
+    <h3>Leh-Ladakh Adventure</h3>
+    <p>Ride through the Himalayas.</p>
+    <button>Book Now</button>
+  </div>
+  <div class="tour-card">
+    <img src="hero2.jpeg" alt="Konkan Coast Ride">
+    <h3>Konkan Coastal Ride</h3>
+    <p>Explore beaches and lush greenery.</p>
+    <button>Book Now</button>
+  </div>
+  <div class="tour-card">
+    <img src="hero3.jpeg" alt="Rajasthan Desert Ride">
+    <h3>Rajasthan Desert Ride</h3>
+    <p>Experience desert trails and forts.</p>
+    <button>Book Now</button>
+  </div>
+</section>
+<!-- Booking Section -->
+<section id="booking">
+  <h2>Book Your Tour</h2>
+  <form id="bookingForm">
+    <label for="tour">Select Tour:</label>
+    <select id="tour" required>
+      <option value="">--Choose a Tour--</option>
+      <option value="leh">Leh-Ladakh Adventure</option>
+      <option value="konkan">Konkan Coastal Ride</option>
+      <option value="rajasthan">Rajasthan Desert Ride</option>
+    </select>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" required>
+
+    <label for="people">Number of People:</label>
+    <input type="number" id="people" min="1" required>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+
+
+<!-- Gallery -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="gallaryimage1.jpeg" alt="Adventure Ride">
+    <img src="gallaryimage2.jpeg" alt="Scenic Road">
+    <img src="gallaryimage3.jpeg" alt="Group Tour">
+  </div>
+</section>
+
+  
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&nbsp; 2026 Miles & Memories. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
