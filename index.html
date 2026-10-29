@@ -21,20 +21,59 @@
       <li><a href="#booking">Booking</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-book">Book Now</button>
+    <a href="#booking" class="nav-book">Book Now</a>
+
   </nav>
 </header>
 
+
 <!-- Hero Section -->
-<secti id="home" class="hero">
-  
-    <img src="hero1.jpeg" alt="Himalayan Ride" class="active">
-    
-  <div class="hero-text">
-    <h2>Ride the Roads, Collect the Stories</h2>
-    <a href="#booking" class="btn">Book Your Ride</a>
+
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+
+  <img
+    src="hero1.jpeg"
+    alt="Beautiful Himalayan mountain adventure"
+    class="hero-bg"
+  >
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-card">
+      <span class="hero-tag">YOUR NEXT ADVENTURE STARTS HERE</span>
+
+      <h1>Ride the Roads,<br>Collect the Stories</h1>
+
+      <p>
+        Discover breathtaking destinations, embrace the open road,
+        and create unforgettable memories.
+      </p>
+
+      <a href="#booking" class="hero-btn">Book Your Ride ↗</a>
+    </div>
   </div>
+
 </section>
+
+
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Miles & Memories</h2>
+  <p>
+    At Miles & Memories, we believe that every journey is more than just a ride — it is an opportunity to discover new places, embrace freedom, and create unforgettable memories.
+
+We bring together passionate riders who share a love for adventure, exploration, and the open road. From the breathtaking mountain landscapes of Leh-Ladakh to the beautiful coastal roads of Konkan and the royal desert trails of Rajasthan, our tours offer experiences that go beyond ordinary travel.
+
+Our goal is to make every journey exciting, comfortable, and memorable. Whether you are an experienced biker or someone looking for a new adventure, Miles & Memories invites you to explore incredible destinations, meet like-minded travellers, and turn every mile into a story worth remembering.
+
+**Miles & Memories — Ride Together, Explore Forever.**
+  </p>
+</section>
+
+
 
 <!-- Tours -->
 <section id="tours">
@@ -43,19 +82,19 @@
     <img src="hero1.jpeg" alt="Leh Ladakh Adventure">
     <h3>Leh-Ladakh Adventure</h3>
     <p>Ride through the Himalayas.</p>
-    <button>Book Now</button>
+    <button type="button" onclick="bookTour('leh')">Book Now</button>
   </div>
   <div class="tour-card">
     <img src="hero2.jpeg" alt="Konkan Coast Ride">
     <h3>Konkan Coastal Ride</h3>
     <p>Explore beaches and lush greenery.</p>
-    <button>Book Now</button>
+    <button type="button" onclick="bookTour('konkan')">Book Now</button>
   </div>
   <div class="tour-card">
     <img src="hero3.jpeg" alt="Rajasthan Desert Ride">
     <h3>Rajasthan Desert Ride</h3>
     <p>Experience desert trails and forts.</p>
-    <button>Book Now</button>
+    <button type="button" onclick="bookTour('rajasthan')">Book Now</button>
   </div>
 </section>
 <!-- Booking Section -->
@@ -116,5 +155,4 @@
   <script src="script.js"></script>
 </body>
 </html>
-
 
