@@ -51,3 +51,17 @@ setInterval(nextSlide, 4000);
 
 // Initialize first slide
 showSlide(currentSlide);
+
+function bookTour(tourName) {
+  const tourSelect = document.getElementById("tour");
+  const bookingSection = document.getElementById("booking");
+
+  if (tourSelect && bookingSection) {
+    tourSelect.value = tourName;
+
+    bookingSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+}
